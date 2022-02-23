@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class Test {
+	public static void main(String[] args) {
+		/**
+		 * @author M. Firat Sen, 2022
+		 */
+		double KM, paidAmount, lastPaidAmount;
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("How many kilometers did you go?: ");
+		KM = input.nextDouble();
+		paidAmount = 10 + KM*(2.20);
+		lastPaidAmount = paidAmount < 20 ? 20 : paidAmount;
+		System.out.println("Amount of paid: ");
+		System.out.println(lastPaidAmount);
+	}
+}
